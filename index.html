@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="index.css" />
+    <script defer src="index.js"></script>
+
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+  </head>
+  <body>
+    <div class="" id="signup">
+      <div class="card">
+        <div class="content_card">
+          <p class="heading">Stay updated!</p>
+          <p class="details">
+            Join 60,000+ product managers receiving monthly updates on:
+          </p>
+          <ul class="checklist">
+            <li>
+              <img
+                class="tick"
+                src="./assets/images/icon-success.svg"
+                alt=""
+              />Product discovery and building what matters
+            </li>
+            <li>
+              <img
+                class="tick"
+                src="./assets/images/icon-success.svg"
+                alt=""
+              />Measuring to ensure updates are a success
+            </li>
+            <li>
+              <img
+                class="tick"
+                src="./assets/images/icon-success.svg"
+                alt=""
+              />And much more!
+            </li>
+          </ul>
+
+          <form id="form">
+            <label for="email_id" class="label">Email address</label>
+
+            <input
+              type="email"
+              name="email"
+              id="Email"
+              class="email"
+              placeholder="email@company.com"
+            />
+
+            <button class="btn" type="submit">
+              Subscribe to monthly newsletter
+            </button>
+          </form>
+        </div>
+
+        <div class="image_container">
+          <img
+            class="image"
+            src="./assets/images/illustration-sign-up-desktop.svg"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="hidden" id="thanks_card">
+      <div class="tccard">
+        <div class="tcimage_container">
+          <img alt="" src="./assets/images/icon-success.svg" />
+        </div>
+        <p class="tcheading">Thanks for subscribing!</p>
+        <p class="tcinfo" id="messageInfo"></p>
+        <button class="tcbtn" type="submit" onclick="hide()">
+          Dismiss message
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
